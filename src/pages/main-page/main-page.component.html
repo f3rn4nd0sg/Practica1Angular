@@ -1,4 +1,3 @@
-<br>
 <div class="container text-center">
   <div class="row justify-content-center mb-3">
     <div
@@ -10,7 +9,7 @@
       <div
         class="card mx-auto"
         style="width: 200px;"
-        [ngClass]="{'animate__animated animate__pulse': ciudad.animada}"
+        [ngClass]="{ 'animate__animated animate__pulse': ciudad.animada }"
       >
         <img [src]="ciudad.imagen" class="card-img-top" [alt]="ciudad.nombre" />
         <div class="card-body">
@@ -20,18 +19,18 @@
       </div>
     </div>
   </div>
-  <br>
+
   <div class="row justify-content-center mb-3">
     <div
       class="col-md-3"
-      *ngFor="let ciudad of ciudades.slice(5, 9)"
+      *ngFor="let ciudad of ciudades.slice(4, 8)"
       (mouseenter)="agregarAnimacion(ciudad)"
       (mouseleave)="quitarAnimacion(ciudad)"
     >
       <div
         class="card mx-auto"
         style="width: 200px;"
-        [ngClass]="{'animate__animated animate__pulse': ciudad.animada}"
+        [ngClass]="{ 'animate__animated animate__pulse': ciudad.animada }"
       >
         <img [src]="ciudad.imagen" class="card-img-top" [alt]="ciudad.nombre" />
         <div class="card-body">
@@ -42,11 +41,3 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
